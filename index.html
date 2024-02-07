@@ -137,6 +137,10 @@
         bottom: 3rem;
       }
 
+      .section-title{
+        text-align: center;
+      }
+
       @page {
         size: a4;
         width: 8.3in;
@@ -177,20 +181,20 @@
               <span> عزوة للحماية الاسرية </span>
             </h1>
           </div>
-
+          
           <tr class="d-tabel">
             <td class="title">رقم التسجيل :</td>
             <td class="info">(2232)</td>
+          </tr>
+          <tr class="d-tabel">
+            <td class="title">الرقم الضريبي :</td>
+            <td class="info">311236434200003</td>
           </tr>
           <tr class="d-tabel">
             <td class="title">العنوان :</td>
             <td class="info">
               الرياض - حي حطين - طريق الأمير تركي بن عبدالعزيز
             </td>
-          </tr>
-          <tr class="d-tabel">
-            <td class="title">الرقم الضريبي :</td>
-            <td class="info">311236434200003</td>
           </tr>
           <tr class="border"></tr>
 
@@ -207,7 +211,7 @@
           <tr class="border"></tr>
 
           <tr>
-            <td class="title">بيانات العميل</td>
+            <td class="title section-title">بيانات المستفيد</td>
           </tr>
           <tr class="customer-box">
             <td class="title" style="width: 30%">اسم العميل</td>
@@ -217,15 +221,44 @@
             <td class="title" style="width: 30%">رقم العميل</td>
             <td class="info" id="userId"></td>
           </tr>
-          <tr class="customer-box">
-            <td class="title" style="width: 30%">المبلغ</td>
-            <td class="info" id="amount"></td>
-          </tr>
           <tr class="customer-box customer-box-1">
             <td class="title" style="width: 30%">طريقة الدفع</td>
             <td class="info" id="paymentMethod"></td>
           </tr>
-          <tr></tr>
+          <tr class="customer-box customer-box-1">
+            <td class="title" style="width: 30%">نوع الخدمة</td>
+            <td class="info" id="serviceType"></td>
+          </tr>
+          <tr class="customer-box customer-box-1">
+            <td class="title" style="width: 30%">الكمية</td>
+            <td class="info" id="quantity"></td>
+          </tr>
+
+          <tr class="border"></tr>
+          
+          <tr>
+            <td class="title section-title">بيانات الفاتورة</td>
+          </tr>
+          <tr class="customer-box">
+            <td class="title" style="width: 30%">المجموع بدون ضريبة</td>
+            <td class="info" id="paymentAmount"></td>
+          </tr>
+          <tr class="customer-box customer-box-1">
+            <td class="title" style="width: 30%">قيمة الخصم</td>
+            <td class="info" id="paymentDiscount"></td>
+          </tr>
+          <tr class="customer-box customer-box-1">
+            <td class="title" style="width: 30%">المبلغ المقدم</td>
+            <td class="info" id="paymentPreFees"></td>
+          </tr>
+          <tr class="customer-box customer-box-1">
+            <td class="title" style="width: 30%">المبلغ المتبقي</td>
+            <td class="info" id="paymentRestAmount"></td>
+          </tr>
+          <tr class="customer-box customer-box-1">
+            <td class="title" style="width: 30%">ضريبة القيمة المضافة</td>
+            <td class="info" id="VAT"></td>
+          </tr>
         </table>
       </div>
     </div>
