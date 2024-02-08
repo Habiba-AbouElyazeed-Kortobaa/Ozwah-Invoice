@@ -101,7 +101,7 @@
 
 
     .info-box {
-      padding: 5rem 0;
+      padding: 5rem 0 0 0;
       border: 1px solid #707070;
       border-radius: 16px;
       width: 95%;
@@ -116,7 +116,7 @@
       border: 1px solid #707070;
       border-radius: 10px;
       top: -6rem;
-      left: 40%;
+      left: 30%;
       z-index: 100;
       background-color: #FFFFFF;
     }
@@ -159,17 +159,15 @@
     .info-box-footer {
       width: 100%;
       background-color: #CAA29A;
-      justify-content: center;
-      gap: 5rem !important;
       border-radius: 0 0 16px 16px;
-      line-height: 4rem;
-      position: absolute;
-      bottom: 0;
-      line-height: 4rem;
+      line-height: 12rem;
     }
 
     .info-box-footer p {
       font-size: 4rem !important;
+    }
+    .info-box-footer .footer-title{
+      text-align: end !important;
     }
 
     .info {
@@ -205,7 +203,7 @@
       text-align: center;
     }
 
-    .discount {
+    .discount, #discountAmount {
       color: #AB1212 !important;
     }
 
@@ -300,23 +298,23 @@
           <ul class="customer-info">
             <li class="info-box-item">
               <p class="title">اسم العميل</p>
-              <p class="info" id="userName"></p>
+              <p class="info d-flex-item" id="userName"></p>
             </li>
             <li class="info-box-item">
               <p class="title">رقم العميل</p>
-              <p class="info" id="userId"></p>
+              <p class="info d-flex-item" id="userId"></p>
             </li>
             <li class="info-box-item">
               <p class="title">طريقة الدفع</p>
-              <p class="info" id="paymentMethod"></p>
+              <p class="info d-flex-item" id="paymentMethod"></p>
             </li>
             <li class="info-box-item">
               <p class="title">نوع الخدمة</p>
-              <p class="info" id="serviceName"></p>
+              <p class="info d-flex-item" id="serviceName"></p>
             </li>
             <li class="info-box-item">
               <p class="title">الكمية</p>
-              <p class="info" id="quantity"> واحد فقط لا غير</p>
+              <p class="info d-flex-item" id="quantity"> واحد فقط لا غير</p>
             </li>
           </ul>
         </div>
@@ -330,31 +328,31 @@
           <ul class="payment-info">
             <li class="info-box-item">
               <p class="title">المجموع بدون ضريبة</p>
-              <p class="info" id="amountWithoutVat"></p>
+              <p class="info d-flex-item" id="amountWithoutVat"></p>
             </li>
             <li class="info-box-item">
               <p class="title discount">قيمة الخصم</p>
-              <p class="info discount" id="discountAmount"></p>
+              <p class="info d-flex-item" id="discountAmount"></p>
             </li>
             <li class="info-box-item">
               <p class="title">المبلغ المدفوع</p>
-              <p class="info" id="paidAmount"></p>
+              <p class="info d-flex-item" id="paidAmount"></p>
             </li>
             <li class="info-box-item">
               <p class="title">ضريبة القيمة المضافة</p>
-              <p class="info" id="vat"></p>
+              <p class="info d-flex-item" id="vat"></p>
             </li>
           </ul>
-          <div class="info-box-footer d-flex" styel="width:100%">
-            <p>الإجمالي</p>
-            <p class="info" id="total"></p>
+          <div class="info-box-footer info-box-item" styel="width:100%">
+            <p class="title footer-title">الإجمالي</p>
+            <p class="info d-flex-item" id="total"></p>
           </div>
         </div>
 
       </div>
     </div>
   </div>
-  <div class="footer">جميع حقوق النشر محفوظة لمنصة عزوة 2022</div>
+  <div class="footer"></div>
 </body>
 
 </html>
