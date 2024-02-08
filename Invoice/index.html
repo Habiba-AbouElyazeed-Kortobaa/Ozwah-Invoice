@@ -73,7 +73,6 @@
       border-bottom: 2px solid #cea59d;
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
       width: 20%;
       bottom: -3rem;
     }
@@ -101,8 +100,8 @@
       padding-top: 8%;
     }
 
-    .info-box{
-      padding-top: 4rem;
+    .info-box {
+      padding-top: 5rem 0;
       border: 1px solid #707070;
       border-radius: 16px;
       width: 95%;
@@ -111,7 +110,7 @@
       position: relative;
     }
 
-    .info-box-title{
+    .info-box-title {
       position: absolute;
       width: 40%;
       border: 1px solid #707070;
@@ -122,7 +121,7 @@
       background-color: #FFFFFF;
     }
 
-    .info-box-title .section-title{
+    .info-box-title .section-title {
       font-weight: bold;
     }
 
@@ -130,35 +129,48 @@
       list-style: none;
       padding: 0;
     }
-    .info-box .info-box-item{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+
+    .info-box .info-box-item {
+      display: table;
+      width: 100%;
+    
     }
 
-    .info-box .customer-info .info-box-item:nth-child(even){
+    .info-box .info-box-item p {
+      display: table-cell;
+      width: 50%;
+      text-align: center;
+    }
+
+    .info-box .customer-info .info-box-item:nth-child(even) {
       background-color: #F6F6F6;
     }
 
-    .info-box .info-box-item .title{
+    .info-box .info-box-item .title {
       color: #080808;
       font-weight: 500;
-      margin-right: 50%;
+      margin-right: 20%;
     }
-    .info-box .info-box-item .info{
+
+    .info-box .info-box-item .info {
       margin-right: 10%;
     }
 
-	.info-box-footer{
-		background-color: #CAA29A;
-		justify-content: center;
-		gap: 5rem !important;
-		border-radius:0 0 16px 16px;
-		line-height: 4rem;
-	}
+    .info-box-footer {
+      width: 100%;
+      background-color: #CAA29A;
+      justify-content: center;
+      gap: 5rem !important;
+      border-radius: 0 0 16px 16px;
+      line-height: 4rem;
+      position: absolute;
+      bottom: 0;
+      line-height: 4rem;
+    }
 
-	.info-box-footer p{
-		font-size: 4rem !important;
-	}
+    .info-box-footer p {
+      font-size: 4rem !important;
+    }
 
     .info {
       color: #55636d;
@@ -194,10 +206,11 @@
       section-title display: table;
     } */
 
-    .d-flex-container{
+    .d-flex-container {
       display: table;
     }
-    .d-flex-item{
+
+    .d-flex-item {
       display: table-cell;
     }
 
@@ -215,9 +228,9 @@
       text-align: center;
     }
 
-    .discount{
+    .discount {
       color: #AB1212 !important;
-    }	
+    }
 
     @page {
       size: a4;
@@ -342,10 +355,10 @@
               <p class="info" id="vat"></p>
             </li>
           </ul>
-	  <div class="info-box-footer d-flex" styel="width:100%">
-		<p>الإجمالي</p>
-		<p class="info" id="total"></p>
-	  </div>
+          <div class="info-box-footer d-flex" styel="width:100%">
+            <p>الإجمالي</p>
+            <p class="info" id="total"></p>
+          </div>
         </div>
 
       </div>

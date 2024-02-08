@@ -73,7 +73,6 @@
       border-bottom: 2px solid #cea59d;
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
       width: 20%;
       bottom: -3rem;
     }
@@ -102,8 +101,8 @@
       padding-top: 8%;
     }
 
-    .info-box{
-      padding-top: 4rem;
+    .info-box {
+      padding: 4rem 0;
       border: 1px solid #707070;
       border-radius: 16px;
       width: 95%;
@@ -112,7 +111,7 @@
       position: relative;
     }
 
-    .info-box-title{
+    .info-box-title {
       position: absolute;
       width: 40%;
       border: 1px solid #707070;
@@ -124,7 +123,7 @@
       background-color: #FFFFFF;
     }
 
-    .info-box-title .section-title{
+    .info-box-title .section-title {
       font-weight: bold;
     }
 
@@ -132,37 +131,40 @@
       list-style: none;
       padding: 0;
     }
-    .info-box .info-box-item{
+
+    .info-box .info-box-item {
       display: table;
     }
-    .info-box .info-box-item p{
+
+    .info-box .info-box-item p {
       display: table-cell;
     }
 
-    .info-box .customer-info .info-box-item:nth-child(even){
+    .info-box .customer-info .info-box-item:nth-child(even) {
       background-color: #F6F6F6;
     }
 
-    .info-box .info-box-item .title{
+    .info-box .info-box-item .title {
       color: #080808;
       font-weight: 500;
       margin-right: 50%;
     }
-    .info-box .info-box-item .info{
+
+    .info-box .info-box-item .info {
       margin-right: 10%;
     }
 
-	.info-box-footer{
-		background-color: #CAA29A;
-		justify-content: center;
-		gap: 5rem !important;
-		border-radius:0 0 16px 16px;
-		line-height: 4rem;
-	}
+    .info-box-footer {
+      background-color: #CAA29A;
+      justify-content: center;
+      gap: 5rem !important;
+      border-radius: 0 0 16px 16px;
+      line-height: 4rem;
+    }
 
-	.info-box-footer p{
-		font-size: 4rem !important;
-	}
+    .info-box-footer p {
+      font-size: 4rem !important;
+    }
 
     .info {
       color: #55636d;
@@ -174,36 +176,13 @@
       display: block;
     }
 
-    /* .customer-box {
-      background-color: #fcfcfc;
-      box-shadow: 0px 2px 6px #8b8b8b4d;
-      border: 1px solid #707070;
-      border-radius: 1.6rem;
-      margin: 3rem 5rem;
-      column-gap: 1rem;
-      padding: 3rem 5rem;
-      display: table;
-      width: 85%;
-    } */
-
-    /* .customer-box .title {
-      padding-right: unset !important;
-    }
-
-    .customer-box-1 {
-      background-color: #f6f6f6;
-    } */
-
-    /* .d-tabel {
-      section-title display: table;
-    } */
-
     .d-flex {
       display: table;
       align-items: baseline;
       gap: 4px;
     }
-    .d-flex p{
+
+    .d-flex p {
       display: table-cell;
       align-items: baseline;
       gap: 4px;
@@ -223,19 +202,19 @@
       text-align: center;
     }
 
-    .discount{
+    .discount {
       color: #AB1212 !important;
-    }	
+    }
 
-    .col-50{
+    .col-50 {
       width: 50%;
     }
 
-    .col-60{
+    .col-60 {
       width: 60%;
     }
 
-    .col-40{
+    .col-40 {
       width: 40%;
     }
 
@@ -366,10 +345,10 @@
               <p class="info" id="vat"></p>
             </li>
           </ul>
-	  <div class="info-box-footer d-flex">
-		<p>الإجمالي</p>
-		<p class="info" id="total"></p>
-	  </div>
+          <div class="info-box-footer d-flex">
+            <p>الإجمالي</p>
+            <p class="info" id="total"></p>
+          </div>
         </div>
 
       </div>
