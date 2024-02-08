@@ -89,7 +89,6 @@
 
     .title {
       color: #cea59d;
-      /* padding-right: 5rem; */
       text-align: start;
       font-weight: 400;
     }
@@ -118,8 +117,7 @@
       border: 1px solid #707070;
       border-radius: 10px;
       top: -6rem;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 40%;
       z-index: 100;
       background-color: #FFFFFF;
     }
@@ -196,15 +194,11 @@
       section-title display: table;
     } */
 
-    .d-flex {
+    .d-flex-container{
       display: table;
-      align-items: baseline;
-      gap: 4px;
     }
-    .d-flex p{
-      display: table-cell
-      align-items: baseline;
-      gap: 4px;
+    .d-flex-item{
+      display: table-cell;
     }
 
     .footer {
@@ -264,32 +258,32 @@
           </h1>
         </div>
 
-        <div class="main-info">
-          <div class="grid-item">
-            <div class="d-flex">
-              <p class="title">رقم التسجيل:</p>
-              <p class="info"> (2232)</p>
+        <div class="main-info d-flex-container">
+          <div class="grid-item col-60">
+            <div class="d-flex-container">
+              <p class="title d-flex-item" style="padding-left: 1rem;">رقم التسجيل:</p>
+              <p class="info d-flex-item"> (2232)</p>
             </div>
-            <div class="d-flex">
-              <p class="title">الرقم الضريبي:</p>
-              <p class="info"> 311236434200003</p>
+            <div class="d-flex-container">
+              <p class="title d-flex-item" style="padding-left: 1rem;">الرقم الضريبي:</p>
+              <p class="info d-flex-item"> 311236434200003</p>
             </div>
-            <div class="d-flex">
-              <p class="title">العنوان:</p>
-              <p class="info">
+            <div class="d-flex-container">
+              <p class="title d-flex-item" style="padding-left: 1rem;">العنوان:</p>
+              <p class="info d-flex-item" style="padding-left: 1rem;">
                 الرياض - حي حطين - طريق الأمير تركي بن عبدالعزيز
               </p>
             </div>
           </div>
-          <div class="grid-item">
-            <div class="d-flex">
-              <p class="title">رقم الفاتورة:</p>
-              <p class="info" id="paymetId"></p>
+          <div class="grid-item col-40">
+            <div class="d-flex-container">
+              <p class="title d-flex-item" style="padding-left: 1rem;">رقم الفاتورة:</p>
+              <p class="info d-flex-item" id="paymetId"></p>
             </div>
 
-            <div class="d-flex">
-              <p class="title">تاريخ الفاتورة:</p>
-              <p class="info" id="paymentDate"></p>
+            <div class="d-flex-container">
+              <p class="title d-flex-item" style="padding-left: 1rem;">تاريخ الفاتورة:</p>
+              <p class="info d-flex-item" id="paymentDate"></p>
             </div>
           </div>
         </div>

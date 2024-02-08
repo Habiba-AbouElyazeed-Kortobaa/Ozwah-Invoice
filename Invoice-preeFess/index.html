@@ -133,8 +133,10 @@
       padding: 0;
     }
     .info-box .info-box-item{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: table;
+    }
+    .info-box .info-box-item p{
+      display: table-cell;
     }
 
     .info-box .customer-info .info-box-item:nth-child(even){
@@ -202,7 +204,7 @@
       gap: 4px;
     }
     .d-flex p{
-      display: table-cell
+      display: table-cell;
       align-items: baseline;
       gap: 4px;
     }
@@ -224,6 +226,18 @@
     .discount{
       color: #AB1212 !important;
     }	
+
+    .col-50{
+      width: 50%;
+    }
+
+    .col-60{
+      width: 60%;
+    }
+
+    .col-40{
+      width: 40%;
+    }
 
     @page {
       size: a4;
