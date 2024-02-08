@@ -54,7 +54,7 @@
     } */
 
     .header {
-      padding-top: 17%;
+      padding-top: 10%;
       text-align: center;
       width: 100%;
       position: relative;
@@ -99,7 +99,7 @@
       margin: 0 auto;
       display: grid !important;
       grid-template-columns: 60% 40%;
-      padding-top: 10%;
+      padding-top: 8%;
     }
 
     .info-box{
@@ -149,6 +149,18 @@
     .info-box .info-box-item .info{
       margin-right: 10%;
     }
+
+	.info-box-footer{
+		background-color: #CAA29A;
+		justify-content: center;
+		gap: 5rem !important;
+		border-radius:0 0 16px 16px;
+		line-height: 4rem;
+	}
+
+	.info-box-footer p{
+		font-size: 4rem !important;
+	}
 
     .info {
       color: #55636d;
@@ -203,6 +215,10 @@
     .section-title {
       text-align: center;
     }
+
+    .discount{
+      color: #AB1212 !important;
+    }	
 
     @page {
       size: a4;
@@ -315,8 +331,8 @@
               <p class="info" id="amountWithoutVat"></p>
             </li>
             <li class="info-box-item">
-              <p class="title">قيمة الخصم</p>
-              <p class="info" id="discountAmount"></p>
+              <p class="title discount">قيمة الخصم</p>
+              <p class="info discount" id="discountAmount"></p>
             </li>
             <li class="info-box-item">
               <p class="title">المبلغ المقدم</p>
@@ -331,6 +347,10 @@
               <p class="info" id="vat"></p>
             </li>
           </ul>
+	  <div class="info-box-footer d-flex">
+		<p>الإجمالي</p>
+		<p class="info" id="vat"></p>
+	  </div>
         </div>
 
       </div>
